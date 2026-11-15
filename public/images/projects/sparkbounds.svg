@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060a1c"/>
+      <stop offset=".55" stop-color="#131f4d"/>
+      <stop offset="1" stop-color="#415A77"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <g id="dude">
+      <rect x="16" y="0" width="32" height="8"/>
+      <rect x="8" y="8" width="48" height="24"/>
+      <rect x="16" y="32" width="32" height="8"/>
+      <rect x="0" y="40" width="64" height="8"/>
+      <rect x="8" y="48" width="48" height="8"/>
+      <rect x="8" y="56" width="16" height="16"/>
+      <rect x="40" y="56" width="16" height="16"/>
+      <rect x="16" y="16" width="8" height="8" fill="#fff"/>
+      <rect x="40" y="16" width="8" height="8" fill="#fff"/>
+      <rect x="20" y="20" width="4" height="4" fill="#05070e"/>
+      <rect x="44" y="20" width="4" height="4" fill="#05070e"/>
+    </g>
+    <g id="tile">
+      <rect width="40" height="40" fill="#1f3370"/>
+      <rect width="40" height="10" fill="#c23a55"/>
+      <rect y="10" width="40" height="4" fill="#7a1428"/>
+      <rect x="4" y="20" width="14" height="6" fill="#2b47a0"/>
+      <rect x="22" y="30" width="14" height="6" fill="#2b47a0"/>
+    </g>
+    <g id="dirt">
+      <rect width="40" height="40" fill="#16244f"/>
+      <rect x="6" y="8" width="12" height="6" fill="#1f3370"/>
+      <rect x="22" y="24" width="12" height="6" fill="#1f3370"/>
+    </g>
+    <path id="heart" d="M4 0h8v4H4zM16 0h8v4h-8zM0 4h28v8H0zM4 12h20v4H4zM8 16h12v4H8zM12 20h4v4h-4z"/>
+    <path id="gem" d="M12 0h8v4h4v4h4v8h-4v4h-4v4h-8v-4H8v-4H4V8h4V4h4z"/>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#efe9e2">
+    <rect x="60" y="80" width="4" height="4"/><rect x="180" y="40" width="4" height="4"/><rect x="260" y="150" width="6" height="6"/>
+    <rect x="390" y="70" width="4" height="4"/><rect x="520" y="130" width="4" height="4"/><rect x="640" y="50" width="6" height="6"/>
+    <rect x="760" y="110" width="4" height="4"/><rect x="880" y="60" width="4" height="4"/><rect x="1130" y="90" width="4" height="4"/>
+    <rect x="120" y="210" width="4" height="4" fill-opacity=".6"/><rect x="330" y="230" width="4" height="4" fill-opacity=".6"/>
+    <rect x="700" y="210" width="4" height="4" fill-opacity=".6"/><rect x="1160" y="240" width="4" height="4" fill-opacity=".6"/>
+    <rect x="460" y="30" width="4" height="4" fill-opacity=".6"/><rect x="940" y="200" width="4" height="4" fill-opacity=".6"/>
+  </g>
+
+  <!-- moon -->
+  <g>
+    <rect x="980" y="100" width="80" height="16" fill="#f3e9dc"/>
+    <rect x="964" y="116" width="112" height="16" fill="#f3e9dc"/>
+    <rect x="956" y="132" width="128" height="48" fill="#f3e9dc"/>
+    <rect x="964" y="180" width="112" height="16" fill="#f3e9dc"/>
+    <rect x="980" y="196" width="80" height="16" fill="#f3e9dc"/>
+    <rect x="990" y="136" width="20" height="16" fill="#d9cbb8"/>
+    <rect x="1036" y="168" width="24" height="16" fill="#d9cbb8"/>
+  </g>
+
+  <!-- mountains -->
+  <path d="M0 560V480h80v-40h60v-40h80v40h60v40h80v-60h80v-40h60v60h80v40h100v-80h80v-40h60v60h100v40h80v-40h80v80h40v100z" fill="#0d1636"/>
+  <path d="M0 600V540h120v-30h120v30h160v-40h120v40h200v-30h160v30h180v-40h140v80z" fill="#0a1029"/>
+
+  <!-- ground -->
+  <g>
+    <use href="#tile" x="0" y="630"/><use href="#tile" x="40" y="630"/><use href="#tile" x="80" y="630"/><use href="#tile" x="120" y="630"/><use href="#tile" x="160" y="630"/><use href="#tile" x="200" y="630"/><use href="#tile" x="240" y="630"/><use href="#tile" x="280" y="630"/><use href="#tile" x="320" y="630"/><use href="#tile" x="360" y="630"/><use href="#tile" x="400" y="630"/><use href="#tile" x="440" y="630"/><use href="#tile" x="480" y="630"/><use href="#tile" x="520" y="630"/><use href="#tile" x="560" y="630"/><use href="#tile" x="600" y="630"/><use href="#tile" x="640" y="630"/><use href="#tile" x="680" y="630"/><use href="#tile" x="720" y="630"/><use href="#tile" x="760" y="630"/><use href="#tile" x="800" y="630"/><use href="#tile" x="840" y="630"/><use href="#tile" x="880" y="630"/><use href="#tile" x="920" y="630"/><use href="#tile" x="960" y="630"/><use href="#tile" x="1000" y="630"/><use href="#tile" x="1040" y="630"/><use href="#tile" x="1080" y="630"/><use href="#tile" x="1120" y="630"/><use href="#tile" x="1160" y="630"/>
+    <use href="#dirt" x="0" y="670"/><use href="#dirt" x="40" y="670"/><use href="#dirt" x="80" y="670"/><use href="#dirt" x="120" y="670"/><use href="#dirt" x="160" y="670"/><use href="#dirt" x="200" y="670"/><use href="#dirt" x="240" y="670"/><use href="#dirt" x="280" y="670"/><use href="#dirt" x="320" y="670"/><use href="#dirt" x="360" y="670"/><use href="#dirt" x="400" y="670"/><use href="#dirt" x="440" y="670"/><use href="#dirt" x="480" y="670"/><use href="#dirt" x="520" y="670"/><use href="#dirt" x="560" y="670"/><use href="#dirt" x="600" y="670"/><use href="#dirt" x="640" y="670"/><use href="#dirt" x="680" y="670"/><use href="#dirt" x="720" y="670"/><use href="#dirt" x="760" y="670"/><use href="#dirt" x="800" y="670"/><use href="#dirt" x="840" y="670"/><use href="#dirt" x="880" y="670"/><use href="#dirt" x="920" y="670"/><use href="#dirt" x="960" y="670"/><use href="#dirt" x="1000" y="670"/><use href="#dirt" x="1040" y="670"/><use href="#dirt" x="1080" y="670"/><use href="#dirt" x="1120" y="670"/><use href="#dirt" x="1160" y="670"/>
+    <use href="#dirt" x="0" y="710"/><use href="#dirt" x="40" y="710"/><use href="#dirt" x="80" y="710"/><use href="#dirt" x="120" y="710"/><use href="#dirt" x="160" y="710"/><use href="#dirt" x="200" y="710"/><use href="#dirt" x="240" y="710"/><use href="#dirt" x="280" y="710"/><use href="#dirt" x="320" y="710"/><use href="#dirt" x="360" y="710"/><use href="#dirt" x="400" y="710"/><use href="#dirt" x="440" y="710"/><use href="#dirt" x="480" y="710"/><use href="#dirt" x="520" y="710"/><use href="#dirt" x="560" y="710"/><use href="#dirt" x="600" y="710"/><use href="#dirt" x="640" y="710"/><use href="#dirt" x="680" y="710"/><use href="#dirt" x="720" y="710"/><use href="#dirt" x="760" y="710"/><use href="#dirt" x="800" y="710"/><use href="#dirt" x="840" y="710"/><use href="#dirt" x="880" y="710"/><use href="#dirt" x="920" y="710"/><use href="#dirt" x="960" y="710"/><use href="#dirt" x="1000" y="710"/><use href="#dirt" x="1040" y="710"/><use href="#dirt" x="1080" y="710"/><use href="#dirt" x="1120" y="710"/><use href="#dirt" x="1160" y="710"/>
+  </g>
+
+  <!-- platforms -->
+  <g>
+    <use href="#tile" x="120" y="480"/><use href="#tile" x="160" y="480"/><use href="#tile" x="200" y="480"/><use href="#tile" x="240" y="480"/><use href="#tile" x="280" y="480"/><use href="#tile" x="320" y="480"/>
+    <use href="#tile" x="480" y="320"/><use href="#tile" x="520" y="320"/><use href="#tile" x="560" y="320"/>
+    <use href="#tile" x="760" y="400"/><use href="#tile" x="800" y="400"/><use href="#tile" x="840" y="400"/><use href="#tile" x="880" y="400"/><use href="#tile" x="920" y="400"/><use href="#tile" x="960" y="400"/>
+  </g>
+
+  <!-- spark beam -->
+  <polyline points="300,440 380,400 420,430 500,360 560,390 640,330 700,360 780,330 840,355" fill="none" stroke="#ffd27a" stroke-width="6" filter="url(#glow)" shape-rendering="geometricPrecision"/>
+
+  <!-- gems -->
+  <g filter="url(#glow)">
+    <use href="#gem" x="514" y="260" fill="#e36a82"/>
+    <use href="#gem" x="1060" y="330" fill="#7f95d8"/>
+    <use href="#gem" x="40" y="560" fill="#e36a82"/>
+    <use href="#gem" x="640" y="560" fill="#7f95d8"/>
+  </g>
+
+  <!-- players -->
+  <use href="#dude" x="236" y="408" fill="#7f95d8"/>
+  <use href="#dude" x="840" y="328" fill="#e36a82"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-weight="700" font-size="16" text-anchor="middle">
+    <text x="268" y="396" fill="#aebde9">P1</text>
+    <text x="872" y="316" fill="#f3a1b1">P2</text>
+  </g>
+
+  <!-- HUD -->
+  <g font-family="Consolas, 'Courier New', monospace" font-weight="700">
+    <text x="40" y="58" fill="#aebde9" font-size="22">P1</text>
+    <g fill="#e36a82"><use href="#heart" x="84" y="38"/><use href="#heart" x="120" y="38"/><use href="#heart" x="156" y="38"/></g>
+    <text x="40" y="98" fill="#f3a1b1" font-size="22">P2</text>
+    <g fill="#e36a82"><use href="#heart" x="84" y="78"/><use href="#heart" x="120" y="78"/><use href="#heart" x="156" y="78" fill-opacity=".3"/></g>
+    <text x="600" y="210" fill="#efe9e2" font-size="64" text-anchor="middle" letter-spacing="6">SPARKBOUNDS</text>
+    <text x="600" y="246" fill="#e36a82" font-size="20" text-anchor="middle" letter-spacing="8">2-PLAYER CO-OP</text>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1B2A"/>
+      <stop offset=".55" stop-color="#090c1d"/>
+      <stop offset="1" stop-color="#0d1a40"/>
+    </linearGradient>
+    <linearGradient id="p1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c23a55"/><stop offset="1" stop-color="#3d0a14"/></linearGradient>
+    <linearGradient id="p2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b47a0"/><stop offset="1" stop-color="#0b1330"/></linearGradient>
+    <linearGradient id="p3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e36a82"/><stop offset="1" stop-color="#1f3370"/></linearGradient>
+    <linearGradient id="p4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b2a6e"/><stop offset="1" stop-color="#140a24"/></linearGradient>
+    <linearGradient id="p5" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#7a1428"/><stop offset="1" stop-color="#f0a46a"/></linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070e" stop-opacity="0"/>
+      <stop offset="1" stop-color="#05070e" stop-opacity=".85"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e36a82"/>
+      <stop offset="1" stop-color="#7a1428"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#000" flood-opacity=".6"/>
+    </filter>
+    <g id="poster-a"><rect width="150" height="220" rx="12" fill="url(#p1)"/><circle cx="75" cy="80" r="30" fill="#f3a1b1" fill-opacity=".8"/><path d="M0 170L50 120 90 160 120 130 150 160V208A12 12 0 0 1 138 220H12A12 12 0 0 1 0 208z" fill="#05070e" fill-opacity=".5"/></g>
+    <g id="poster-b"><rect width="150" height="220" rx="12" fill="url(#p2)"/><path d="M20 190L75 60 130 190z" fill="#7f95d8" fill-opacity=".45"/><circle cx="110" cy="50" r="12" fill="#efe9e2" fill-opacity=".7"/></g>
+    <g id="poster-c"><rect width="150" height="220" rx="12" fill="url(#p3)"/><rect x="30" y="40" width="90" height="120" rx="45" fill="#05070e" fill-opacity=".35"/></g>
+    <g id="poster-d"><rect width="150" height="220" rx="12" fill="url(#p4)"/><circle cx="75" cy="110" r="46" fill="none" stroke="#e36a82" stroke-width="6" stroke-opacity=".7"/><circle cx="75" cy="110" r="16" fill="#e36a82" fill-opacity=".6"/></g>
+    <g id="poster-e"><rect width="150" height="220" rx="12" fill="url(#p5)"/><path d="M0 150Q75 90 150 150V208A12 12 0 0 1 138 220H12A12 12 0 0 1 0 208z" fill="#05070e" fill-opacity=".45"/></g>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- poster wall -->
+  <g transform="rotate(-12 600 375) translate(-120 -170)" opacity=".9">
+    <g transform="translate(0 0)">
+      <use href="#poster-a" x="0"/><use href="#poster-b" x="170"/><use href="#poster-c" x="340"/><use href="#poster-d" x="510"/><use href="#poster-e" x="680"/><use href="#poster-a" x="850"/><use href="#poster-b" x="1020"/><use href="#poster-c" x="1190"/>
+    </g>
+    <!-- film strip -->
+    <g transform="translate(-100 250)">
+      <rect width="1600" height="120" fill="#05070e"/>
+      <g fill="#efe9e2" fill-opacity=".85">
+        <rect x="10" y="10" width="22" height="14" rx="3"/><rect x="60" y="10" width="22" height="14" rx="3"/><rect x="110" y="10" width="22" height="14" rx="3"/><rect x="160" y="10" width="22" height="14" rx="3"/><rect x="210" y="10" width="22" height="14" rx="3"/><rect x="260" y="10" width="22" height="14" rx="3"/><rect x="310" y="10" width="22" height="14" rx="3"/><rect x="360" y="10" width="22" height="14" rx="3"/><rect x="410" y="10" width="22" height="14" rx="3"/><rect x="460" y="10" width="22" height="14" rx="3"/><rect x="510" y="10" width="22" height="14" rx="3"/><rect x="560" y="10" width="22" height="14" rx="3"/><rect x="610" y="10" width="22" height="14" rx="3"/><rect x="660" y="10" width="22" height="14" rx="3"/><rect x="710" y="10" width="22" height="14" rx="3"/><rect x="760" y="10" width="22" height="14" rx="3"/><rect x="810" y="10" width="22" height="14" rx="3"/><rect x="860" y="10" width="22" height="14" rx="3"/><rect x="910" y="10" width="22" height="14" rx="3"/><rect x="960" y="10" width="22" height="14" rx="3"/><rect x="1010" y="10" width="22" height="14" rx="3"/><rect x="1060" y="10" width="22" height="14" rx="3"/><rect x="1110" y="10" width="22" height="14" rx="3"/><rect x="1160" y="10" width="22" height="14" rx="3"/><rect x="1210" y="10" width="22" height="14" rx="3"/><rect x="1260" y="10" width="22" height="14" rx="3"/><rect x="1310" y="10" width="22" height="14" rx="3"/><rect x="1360" y="10" width="22" height="14" rx="3"/><rect x="1410" y="10" width="22" height="14" rx="3"/><rect x="1460" y="10" width="22" height="14" rx="3"/>
+        <rect x="10" y="96" width="22" height="14" rx="3"/><rect x="60" y="96" width="22" height="14" rx="3"/><rect x="110" y="96" width="22" height="14" rx="3"/><rect x="160" y="96" width="22" height="14" rx="3"/><rect x="210" y="96" width="22" height="14" rx="3"/><rect x="260" y="96" width="22" height="14" rx="3"/><rect x="310" y="96" width="22" height="14" rx="3"/><rect x="360" y="96" width="22" height="14" rx="3"/><rect x="410" y="96" width="22" height="14" rx="3"/><rect x="460" y="96" width="22" height="14" rx="3"/><rect x="510" y="96" width="22" height="14" rx="3"/><rect x="560" y="96" width="22" height="14" rx="3"/><rect x="610" y="96" width="22" height="14" rx="3"/><rect x="660" y="96" width="22" height="14" rx="3"/><rect x="710" y="96" width="22" height="14" rx="3"/><rect x="760" y="96" width="22" height="14" rx="3"/><rect x="810" y="96" width="22" height="14" rx="3"/><rect x="860" y="96" width="22" height="14" rx="3"/><rect x="910" y="96" width="22" height="14" rx="3"/><rect x="960" y="96" width="22" height="14" rx="3"/><rect x="1010" y="96" width="22" height="14" rx="3"/><rect x="1060" y="96" width="22" height="14" rx="3"/><rect x="1110" y="96" width="22" height="14" rx="3"/><rect x="1160" y="96" width="22" height="14" rx="3"/><rect x="1210" y="96" width="22" height="14" rx="3"/><rect x="1260" y="96" width="22" height="14" rx="3"/><rect x="1310" y="96" width="22" height="14" rx="3"/><rect x="1360" y="96" width="22" height="14" rx="3"/><rect x="1410" y="96" width="22" height="14" rx="3"/><rect x="1460" y="96" width="22" height="14" rx="3"/>
+      </g>
+      <g fill="#1f3370" fill-opacity=".9">
+        <rect x="20" y="32" width="140" height="56" rx="6"/><rect x="180" y="32" width="140" height="56" rx="6" fill="#7a1428"/><rect x="340" y="32" width="140" height="56" rx="6"/><rect x="500" y="32" width="140" height="56" rx="6" fill="#4b2a6e"/><rect x="660" y="32" width="140" height="56" rx="6" fill="#9c1f38"/><rect x="820" y="32" width="140" height="56" rx="6"/><rect x="980" y="32" width="140" height="56" rx="6" fill="#7a1428"/><rect x="1140" y="32" width="140" height="56" rx="6"/><rect x="1300" y="32" width="140" height="56" rx="6" fill="#4b2a6e"/>
+      </g>
+    </g>
+    <g transform="translate(0 400)">
+      <use href="#poster-d" x="0"/><use href="#poster-e" x="170"/><use href="#poster-a" x="340"/><use href="#poster-b" x="510"/><use href="#poster-c" x="680"/><use href="#poster-d" x="850"/><use href="#poster-e" x="1020"/><use href="#poster-a" x="1190"/>
+    </g>
+    <g transform="translate(85 640)">
+      <use href="#poster-b" x="0"/><use href="#poster-c" x="170"/><use href="#poster-d" x="340"/><use href="#poster-e" x="510"/><use href="#poster-a" x="680"/><use href="#poster-b" x="850"/><use href="#poster-c" x="1020"/>
+    </g>
+  </g>
+
+  <rect width="1200" height="750" fill="url(#fade)"/>
+
+  <!-- hero card -->
+  <g font-family="Georgia, 'Times New Roman', serif" filter="url(#sh)">
+    <g transform="translate(330 250)">
+      <rect width="540" height="250" rx="28" fill="#090d1f" fill-opacity=".82" stroke="#fff" stroke-opacity=".14"/>
+      <circle cx="110" cy="125" r="62" fill="url(#accent)"/>
+      <path d="M95 95L145 125 95 155z" fill="#fff"/>
+      <text x="200" y="118" fill="#efe9e2" font-size="54" font-style="italic">FilmRoll</text>
+      <text x="202" y="152" fill="#98a2ba" font-size="16" font-family="Segoe UI, Helvetica, Arial, sans-serif" letter-spacing="2">DISCOVER · WATCHLIST · ROULETTE</text>
+      <g fill="#e36a82" transform="translate(202 178)">
+        <path d="M10 0l3 7 7 .6-5.4 4.6 1.7 7.2L10 15.6 3.7 19.4l1.7-7.2L0 7.6 7 7z"/>
+        <path transform="translate(26 0)" d="M10 0l3 7 7 .6-5.4 4.6 1.7 7.2L10 15.6 3.7 19.4l1.7-7.2L0 7.6 7 7z"/>
+        <path transform="translate(52 0)" d="M10 0l3 7 7 .6-5.4 4.6 1.7 7.2L10 15.6 3.7 19.4l1.7-7.2L0 7.6 7 7z"/>
+        <path transform="translate(78 0)" d="M10 0l3 7 7 .6-5.4 4.6 1.7 7.2L10 15.6 3.7 19.4l1.7-7.2L0 7.6 7 7z"/>
+        <path transform="translate(104 0)" d="M10 0l3 7 7 .6-5.4 4.6 1.7 7.2L10 15.6 3.7 19.4l1.7-7.2L0 7.6 7 7z" fill-opacity=".3"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#091128"/>
+      <stop offset=".7" stop-color="#070a17"/>
+      <stop offset="1" stop-color="#1B263B"/>
+    </linearGradient>
+    <radialGradient id="core" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#415A77" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#415A77" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f3370"/>
+      <stop offset="1" stop-color="#0d1636"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e36a82"/>
+      <stop offset="1" stop-color="#7a1428"/>
+    </linearGradient>
+    <linearGradient id="cam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3f78"/>
+      <stop offset="1" stop-color="#121a3a"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="600" cy="375" r="330" fill="url(#core)"/>
+
+  <!-- circuit traces -->
+  <g fill="none" stroke="#7f95d8" stroke-opacity=".22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M480 300H420V230H380"/><path d="M480 340H400V330H380"/><path d="M480 380H440V400H380"/>
+    <path d="M720 300H760V215H820"/><path d="M720 340H790V375H820"/><path d="M720 410H760V515H820"/>
+    <path d="M560 495V560H580"/><path d="M640 495V530H700V560"/>
+    <path d="M560 255V170H500V140"/><path d="M640 255V200H760V120"/>
+    <path d="M0 640H160V600H300"/><path d="M1200 660H1040V700H900"/><path d="M80 0V60H200V110"/>
+  </g>
+  <g fill="none" stroke="#e36a82" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M480 300H420V230H380"/><path d="M720 340H790V375H820"/><path d="M640 495V530H700V560"/>
+  </g>
+  <g fill="#7f95d8" fill-opacity=".5">
+    <circle cx="300" cy="600" r="6"/><circle cx="900" cy="700" r="6"/><circle cx="200" cy="110" r="6"/><circle cx="500" cy="140" r="6"/><circle cx="760" cy="120" r="6"/>
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <!-- chip -->
+    <g filter="url(#sh)">
+      <g fill="#98a2ba" fill-opacity=".7">
+        <rect x="500" y="240" width="10" height="16" rx="2"/><rect x="530" y="240" width="10" height="16" rx="2"/><rect x="560" y="240" width="10" height="16" rx="2"/><rect x="590" y="240" width="10" height="16" rx="2"/><rect x="620" y="240" width="10" height="16" rx="2"/><rect x="650" y="240" width="10" height="16" rx="2"/><rect x="680" y="240" width="10" height="16" rx="2"/>
+        <rect x="500" y="494" width="10" height="16" rx="2"/><rect x="530" y="494" width="10" height="16" rx="2"/><rect x="560" y="494" width="10" height="16" rx="2"/><rect x="590" y="494" width="10" height="16" rx="2"/><rect x="620" y="494" width="10" height="16" rx="2"/><rect x="650" y="494" width="10" height="16" rx="2"/><rect x="680" y="494" width="10" height="16" rx="2"/>
+        <rect x="464" y="280" width="16" height="10" rx="2"/><rect x="464" y="310" width="16" height="10" rx="2"/><rect x="464" y="340" width="16" height="10" rx="2"/><rect x="464" y="370" width="16" height="10" rx="2"/><rect x="464" y="400" width="16" height="10" rx="2"/><rect x="464" y="430" width="16" height="10" rx="2"/><rect x="464" y="460" width="16" height="10" rx="2"/>
+        <rect x="720" y="280" width="16" height="10" rx="2"/><rect x="720" y="310" width="16" height="10" rx="2"/><rect x="720" y="340" width="16" height="10" rx="2"/><rect x="720" y="370" width="16" height="10" rx="2"/><rect x="720" y="400" width="16" height="10" rx="2"/><rect x="720" y="430" width="16" height="10" rx="2"/><rect x="720" y="460" width="16" height="10" rx="2"/>
+      </g>
+      <rect x="480" y="255" width="240" height="240" rx="22" fill="url(#chip)" stroke="#fff" stroke-opacity=".14" stroke-width="2"/>
+      <rect x="500" y="275" width="200" height="200" rx="14" fill="none" stroke="#fff" stroke-opacity=".08"/>
+      <circle cx="520" cy="295" r="6" fill="#e36a82"/>
+      <text x="600" y="380" fill="#efe9e2" font-size="46" font-weight="800" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">ESP32</text>
+      <text x="600" y="414" fill="#e36a82" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="6" font-family="Consolas, 'Courier New', monospace">CAM · AI</text>
+    </g>
+
+    <!-- camera feed -->
+    <g transform="translate(60 150)" filter="url(#sh)">
+      <rect width="320" height="260" rx="22" fill="#0e1636" stroke="#fff" stroke-opacity=".1"/>
+      <rect x="14" y="14" width="292" height="190" rx="14" fill="url(#cam)"/>
+      <path d="M14 170L80 120 130 150 200 100 306 170V190A14 14 0 0 1 292 204H28A14 14 0 0 1 14 190z" fill="#05070e" fill-opacity=".35"/>
+      <rect x="150" y="70" width="34" height="80" rx="6" fill="#7a1428" fill-opacity=".7"/>
+      <ellipse cx="167" cy="62" rx="30" ry="22" fill="#2f8a5a" fill-opacity=".85"/>
+      <rect x="128" y="34" width="80" height="124" rx="4" fill="none" stroke="#e36a82" stroke-width="3"/>
+      <rect x="128" y="14" width="98" height="22" rx="4" fill="#e36a82"/>
+      <text x="136" y="30" fill="#fff" font-size="13" font-weight="700">plant · 0.94</text>
+      <circle cx="34" cy="32" r="6" fill="#ff4d6a"/>
+      <text x="46" y="37" fill="#efe9e2" font-size="12" font-weight="700">LIVE</text>
+      <text x="22" y="236" fill="#efe9e2" font-size="15" font-weight="700">YOLO object detection</text>
+      <text x="298" y="236" fill="#98a2ba" font-size="12" text-anchor="end">→ MongoDB</text>
+    </g>
+
+    <!-- sensors -->
+    <g transform="translate(820 140)" filter="url(#sh)">
+      <rect width="320" height="150" rx="22" fill="#0e1636" stroke="#fff" stroke-opacity=".1"/>
+      <text x="22" y="38" fill="#98a2ba" font-size="13">DHT11 · Temperature</text>
+      <text x="22" y="82" fill="#efe9e2" font-size="38" font-weight="700">27.4°C</text>
+      <polyline points="22,124 62,112 102,118 142,98 182,104 222,86 262,92 298,74" fill="none" stroke="#e36a82" stroke-width="3" stroke-linejoin="round"/>
+      <text x="298" y="38" fill="#7fd1a0" font-size="12" text-anchor="end">● streaming</text>
+    </g>
+    <g transform="translate(820 320)" filter="url(#sh)">
+      <rect width="320" height="110" rx="22" fill="#0e1636" stroke="#fff" stroke-opacity=".1"/>
+      <text x="22" y="38" fill="#98a2ba" font-size="13">Soil moisture</text>
+      <text x="298" y="38" fill="#efe9e2" font-size="18" font-weight="700" text-anchor="end">41%</text>
+      <rect x="22" y="62" width="276" height="14" rx="7" fill="#fff" fill-opacity=".08"/>
+      <rect x="22" y="62" width="113" height="14" rx="7" fill="url(#accent)"/>
+      <text x="22" y="96" fill="#98a2ba" font-size="11">Ubidots dashboard sync</text>
+    </g>
+    <g transform="translate(820 460)" filter="url(#sh)">
+      <rect width="320" height="110" rx="22" fill="#0e1636" stroke="#fff" stroke-opacity=".1"/>
+      <text x="22" y="38" fill="#98a2ba" font-size="13">Ultrasonic distance</text>
+      <text x="22" y="80" fill="#efe9e2" font-size="32" font-weight="700">18 cm</text>
+      <g fill="none" stroke="#7f95d8" stroke-width="3" stroke-linecap="round">
+        <path d="M250 56a24 24 0 0 1 0 34"/><path d="M262 46a38 38 0 0 1 0 54" stroke-opacity=".6"/><path d="M274 36a52 52 0 0 1 0 74" stroke-opacity=".3"/>
+      </g>
+    </g>
+
+    <!-- AI bubble -->
+    <g transform="translate(330 580)" filter="url(#sh)">
+      <rect width="540" height="96" rx="24" fill="#16244f" stroke="#e36a82" stroke-opacity=".35"/>
+      <circle cx="52" cy="48" r="26" fill="url(#accent)"/>
+      <path d="M52 32l4 11 11 5-11 5-4 11-4-11-11-5 11-5z" fill="#fff"/>
+      <text x="96" y="42" fill="#f3a1b1" font-size="13" font-weight="700" letter-spacing="1">OPENAI ASSISTANT</text>
+      <text x="96" y="68" fill="#efe9e2" font-size="17">Soil is getting dry. Time to water the plant.</text>
+    </g>
+
+    <!-- Streamlit badge -->
+    <g transform="translate(470 120)">
+      <rect width="260" height="44" rx="22" fill="#0e1636" stroke="#fff" stroke-opacity=".12"/>
+      <circle cx="26" cy="22" r="7" fill="#7fd1a0"/>
+      <text x="44" y="28" fill="#efe9e2" font-size="14" font-weight="600">Live monitoring · Streamlit</text>
+    </g>
+  </g>
+</svg>

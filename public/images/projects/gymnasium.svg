@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1736"/>
+      <stop offset=".6" stop-color="#090e21"/>
+      <stop offset="1" stop-color="#1B263B"/>
+    </linearGradient>
+    <radialGradient id="g1" cx=".88" cy=".08" r=".55">
+      <stop offset="0" stop-color="#415A77" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#415A77" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx=".05" cy=".95" r=".5">
+      <stop offset="0" stop-color="#2b47a0" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#2b47a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e36a82"/>
+      <stop offset="1" stop-color="#7a1428"/>
+    </linearGradient>
+    <clipPath id="win"><rect width="780" height="560" rx="20"/></clipPath>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="135%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000" flood-opacity=".55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#g1)"/>
+  <rect width="1200" height="750" fill="url(#g2)"/>
+  <g stroke="#ffffff" stroke-opacity=".035">
+    <path d="M0 125H1200M0 250H1200M0 375H1200M0 500H1200M0 625H1200"/>
+    <path d="M150 0V750M300 0V750M450 0V750M600 0V750M750 0V750M900 0V750M1050 0V750"/>
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <!-- App window -->
+    <g transform="translate(90 95)" filter="url(#sh)">
+      <g clip-path="url(#win)">
+        <rect width="780" height="560" fill="#0b132b"/>
+        <rect width="780" height="48" fill="#111b3d"/>
+        <rect y="48" width="180" height="512" fill="#0d1734"/>
+      </g>
+      <rect width="780" height="560" rx="20" fill="none" stroke="#fff" stroke-opacity=".08"/>
+      <circle cx="26" cy="24" r="6" fill="#e36a82"/>
+      <circle cx="46" cy="24" r="6" fill="#8f1d33"/>
+      <circle cx="66" cy="24" r="6" fill="#2b47a0"/>
+      <rect x="290" y="14" width="200" height="20" rx="10" fill="#0b132b"/>
+
+      <!-- sidebar -->
+      <rect x="22" y="72" width="32" height="32" rx="9" fill="url(#accent)"/>
+      <rect x="64" y="78" width="80" height="9" rx="4.5" fill="#efe9e2" fill-opacity=".85"/>
+      <rect x="64" y="93" width="54" height="7" rx="3.5" fill="#98a2ba" fill-opacity=".5"/>
+      <rect x="14" y="136" width="152" height="40" rx="10" fill="#c23a55" fill-opacity=".18"/>
+      <rect x="28" y="150" width="14" height="14" rx="4" fill="#e36a82"/>
+      <rect x="52" y="153" width="76" height="8" rx="4" fill="#efe9e2" fill-opacity=".9"/>
+      <g fill="#98a2ba" fill-opacity=".35">
+        <rect x="28" y="198" width="14" height="14" rx="4"/><rect x="52" y="201" width="64" height="8" rx="4"/>
+        <rect x="28" y="238" width="14" height="14" rx="4"/><rect x="52" y="241" width="84" height="8" rx="4"/>
+        <rect x="28" y="278" width="14" height="14" rx="4"/><rect x="52" y="281" width="56" height="8" rx="4"/>
+        <rect x="28" y="318" width="14" height="14" rx="4"/><rect x="52" y="321" width="72" height="8" rx="4"/>
+      </g>
+
+      <!-- header -->
+      <text x="210" y="96" fill="#efe9e2" font-size="24" font-weight="700">Follow-up Priority</text>
+      <text x="210" y="120" fill="#98a2ba" font-size="13">Sorted by ML classifier · admin approves every message</text>
+
+      <!-- stat cards -->
+      <g transform="translate(210 145)">
+        <rect width="170" height="92" rx="14" fill="#13214a" fill-opacity=".7" stroke="#fff" stroke-opacity=".06"/>
+        <text x="18" y="32" fill="#98a2ba" font-size="12">Reminders today</text>
+        <text x="18" y="72" fill="#efe9e2" font-size="32" font-weight="700">128</text>
+      </g>
+      <g transform="translate(392 145)">
+        <rect width="170" height="92" rx="14" fill="#13214a" fill-opacity=".7" stroke="#fff" stroke-opacity=".06"/>
+        <text x="18" y="32" fill="#98a2ba" font-size="12">Macro-F1</text>
+        <text x="18" y="72" fill="#e36a82" font-size="32" font-weight="700">0.67</text>
+      </g>
+      <g transform="translate(574 145)">
+        <rect width="180" height="92" rx="14" fill="url(#accent)"/>
+        <text x="18" y="32" fill="#fff" fill-opacity=".8" font-size="12">Automated tests</text>
+        <text x="18" y="72" fill="#fff" font-size="32" font-weight="700">80+</text>
+      </g>
+
+      <!-- list -->
+      <g transform="translate(210 262)">
+        <rect width="544" height="272" rx="14" fill="#0e1838" stroke="#fff" stroke-opacity=".06"/>
+        <g transform="translate(0 0)">
+          <circle cx="34" cy="38" r="16" fill="#2b47a0"/>
+          <rect x="62" y="28" width="150" height="9" rx="4.5" fill="#efe9e2" fill-opacity=".85"/>
+          <rect x="62" y="44" width="100" height="7" rx="3.5" fill="#98a2ba" fill-opacity=".45"/>
+          <rect x="380" y="26" width="72" height="24" rx="12" fill="#c23a55"/>
+          <text x="416" y="43" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">HIGH</text>
+          <rect x="466" y="30" width="56" height="16" rx="8" fill="#fff" fill-opacity=".08"/>
+        </g>
+        <path d="M18 76H526" stroke="#fff" stroke-opacity=".05"/>
+        <g transform="translate(0 64)">
+          <circle cx="34" cy="38" r="16" fill="#8f1d33"/>
+          <rect x="62" y="28" width="128" height="9" rx="4.5" fill="#efe9e2" fill-opacity=".85"/>
+          <rect x="62" y="44" width="86" height="7" rx="3.5" fill="#98a2ba" fill-opacity=".45"/>
+          <rect x="380" y="26" width="72" height="24" rx="12" fill="#c23a55"/>
+          <text x="416" y="43" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">HIGH</text>
+          <rect x="466" y="30" width="56" height="16" rx="8" fill="#fff" fill-opacity=".08"/>
+        </g>
+        <path d="M18 140H526" stroke="#fff" stroke-opacity=".05"/>
+        <g transform="translate(0 128)">
+          <circle cx="34" cy="38" r="16" fill="#5b6fb8"/>
+          <rect x="62" y="28" width="164" height="9" rx="4.5" fill="#efe9e2" fill-opacity=".85"/>
+          <rect x="62" y="44" width="110" height="7" rx="3.5" fill="#98a2ba" fill-opacity=".45"/>
+          <rect x="380" y="26" width="72" height="24" rx="12" fill="#e36a82" fill-opacity=".25"/>
+          <text x="416" y="43" fill="#f3a1b1" font-size="11" font-weight="700" text-anchor="middle">MED</text>
+          <rect x="466" y="30" width="56" height="16" rx="8" fill="#fff" fill-opacity=".08"/>
+        </g>
+        <path d="M18 204H526" stroke="#fff" stroke-opacity=".05"/>
+        <g transform="translate(0 192)">
+          <circle cx="34" cy="38" r="16" fill="#1f3370"/>
+          <rect x="62" y="28" width="118" height="9" rx="4.5" fill="#efe9e2" fill-opacity=".85"/>
+          <rect x="62" y="44" width="80" height="7" rx="3.5" fill="#98a2ba" fill-opacity=".45"/>
+          <rect x="380" y="26" width="72" height="24" rx="12" fill="#7f95d8" fill-opacity=".2"/>
+          <text x="416" y="43" fill="#aebde9" font-size="11" font-weight="700" text-anchor="middle">LOW</text>
+          <rect x="466" y="30" width="56" height="16" rx="8" fill="#fff" fill-opacity=".08"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- AI message card -->
+    <g transform="translate(830 250)" filter="url(#sh)">
+      <rect width="290" height="330" rx="24" fill="#101a3a" stroke="#fff" stroke-opacity=".1"/>
+      <rect width="290" height="64" rx="24" fill="#16244f"/>
+      <rect y="40" width="290" height="24" fill="#16244f"/>
+      <path d="M36 20l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#e36a82"/>
+      <text x="64" y="38" fill="#efe9e2" font-size="15" font-weight="700">AI Draft</text>
+      <text x="64" y="54" fill="#98a2ba" font-size="11">persona-aware · safety checked</text>
+      <rect x="20" y="86" width="230" height="96" rx="16" fill="#1f3370"/>
+      <rect x="36" y="104" width="190" height="8" rx="4" fill="#efe9e2" fill-opacity=".8"/>
+      <rect x="36" y="120" width="170" height="8" rx="4" fill="#efe9e2" fill-opacity=".8"/>
+      <rect x="36" y="136" width="196" height="8" rx="4" fill="#efe9e2" fill-opacity=".8"/>
+      <rect x="36" y="152" width="120" height="8" rx="4" fill="#efe9e2" fill-opacity=".8"/>
+      <rect x="20" y="198" width="250" height="40" rx="12" fill="#fff" fill-opacity=".05"/>
+      <rect x="36" y="214" width="140" height="8" rx="4" fill="#98a2ba" fill-opacity=".5"/>
+      <rect x="20" y="260" width="120" height="46" rx="23" fill="url(#accent)"/>
+      <text x="80" y="288" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">Approve</text>
+      <rect x="150" y="260" width="120" height="46" rx="23" fill="none" stroke="#fff" stroke-opacity=".2"/>
+      <text x="210" y="288" fill="#efe9e2" font-size="14" text-anchor="middle">Edit</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+# Dependencies & build output
+node_modules/
+dist/
+
+# Private documents: never publish these
+*.pdf
+*.docx
+
+# Design references & original photos (the site uses optimized copies in public/)
+color-palette.webp
+my-photo.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
